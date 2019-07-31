@@ -1,0 +1,144 @@
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: #f1f1f1;
+  color: #959A9E;
+}
+
+p,
+a {
+  color: gray;
+display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding-top: 8px;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+  position: fixed;
+  display: inline-block;
+  padding: 50px 250px 250px 250px;
+  width: 100%;
+  min-height: 100%;
+  background: #f1f1f1;
+
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  
+  /* padding-left: 500px; */
+  /* text-align: center; */
+  /* background:#f1f1f1; */
+  
+}
+
+.loginForm {
+  background: #fff;
+  font-size: 0.8rem;
+  padding-top: 27.881574803px;
+  display: block;
+  width: 50%;
+  height: 201.6415748px;
+  margin: auto;
+  max-width: 254.01px;
+  position: relative;
+  padding-left: 20.73070866px;
+  padding: 20px;
+  box-shadow: 0 1px 1px 1px lightgray;
+}
+.btn {
+  background-color: #0f85ba;
+  border: none;
+  border-radius: 2px 2px 2px 2px;
+  width: 54px;
+  height: 26.921574803px;
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 0.75rem;
+  text-decoration: none;
+  padding: 2px 2px 2px 2px;
+  float:right;
+  margin-top:-20px;
+ margin-right: -2px;
+}
+
+/* 
+input[type="checkbox"] {
+    border: 1.5px solid lightgray;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+
+} */
+.stylecheckbox input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+  font-size: 0.72rem;
+
+}
+.stylecheckbox input[type="checkbox"] + label {
+  position: relative;
+  padding: 3px 0 0 25px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.72rem;
+}
+
+.stylecheckbox input[type="checkbox"] + label::before {
+  content: "";
+  background: white;
+  border: 2px solid lightgrey;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.72rem;
+
+  display: inline-block;
+}
+.stylecheckbox input[type="checkbox"] + label:after {
+  content: "";
+  border-style: solid;
+  border-width: 0 0 2px 2px;
+  border-color: #0f85ba;
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transform: scale(2) rotate(-45deg);
+  opacity: 0;
+  font-size: 0.72rem;
+
+  display: inline-block;
+}
+.stylecheckbox input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1) rotate(-45deg);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  border: 1.5px solid lightgray;
+  background: #fbfbfb;
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+  height: 30px;
+}
+#lostpass {
+  display: block;
+  text-align: left;
+  margin: auto;
+  max-width: 254.01px; 
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
