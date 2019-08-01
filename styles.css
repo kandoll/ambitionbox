@@ -1,83 +1,85 @@
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
+  /* font-family: Arial, Helvetica, sans-serif, sans-serif; */
   background: #f1f1f1;
-  color: #959A9E;
-}
-
-p,
-a {
-  color: gray;
-display: inline-block;
-  text-decoration: none;
-  font-weight: 400;
+  color: #959a9e;
   font-size: 0.8rem;
-  padding-top: 8px;
+
+  font-weight: 300;
+}
+.logo {
+  /* text-align: center; */
+  margin-bottom: 0.625rem;
 }
 
 .wrapper {
+  padding: 3.125rem;
   box-sizing: border-box;
-  display: flex;
-  position: fixed;
-  display: inline-block;
-  padding: 50px 250px 250px 250px;
-  width: 100%;
-  min-height: 100%;
-  background: #f1f1f1;
-
-  /* align-items: center; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  
-  /* padding-left: 500px; */
-  /* text-align: center; */
-  /* background:#f1f1f1; */
-  
-}
+  text-align: center;
+} 
 
 .loginForm {
   background: #fff;
-  font-size: 0.8rem;
-  padding-top: 27.881574803px;
-  display: block;
-  width: 50%;
-  height: 201.6415748px;
+  text-align: left;
+  height: 13.125rem;
   margin: auto;
-  max-width: 254.01px;
-  position: relative;
-  padding-left: 20.73070866px;
-  padding: 20px;
+  max-width: 15.875rem;
+  padding-top: 1.74rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
   box-shadow: 0 1px 1px 1px lightgray;
 }
+
 .btn {
   background-color: #0f85ba;
   border: none;
-  border-radius: 2px 2px 2px 2px;
-  width: 54px;
-  height: 26.921574803px;
-  color: #f1f1f1;
+  border-radius: 3.5px 3.5px 3.5px 3.5px;
+  width: 3.375rem;
+  height: 1.68rem;
+  /* color: #f1f1f1; */
+  color: lightgray;
   text-align: center;
   font-size: 0.75rem;
-  text-decoration: none;
-  padding: 2px 2px 2px 2px;
-  float:right;
-  margin-top:-20px;
- margin-right: -2px;
+  float: right;
+  position: relative;
+  margin-top: -1.25rem;
+  margin-right: -0.125rem;
 }
 
-/* 
-input[type="checkbox"] {
-    border: 1.5px solid lightgray;
-    width: 16px;
-    height: 16px;
-    background-color: transparent;
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  border: 1.5px solid lightgray;
+  background: #fbfbfb;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  height: 1.875rem;
+}
 
-} */
+a,
+p {
+  color: gray;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+  font-weight: 300;
+
+}
+
+#lostpass {
+  color: gray;
+  text-align: left;
+  height: 13.125rem;
+  margin: auto;
+  max-width: 15.875rem;
+
+}
+
 .stylecheckbox input[type="checkbox"] {
   position: absolute;
   left: -9999px;
   font-size: 0.72rem;
-
 }
 .stylecheckbox input[type="checkbox"] + label {
   position: relative;
@@ -91,8 +93,8 @@ input[type="checkbox"] {
   content: "";
   background: white;
   border: 2px solid lightgrey;
-  height: 15px;
-  width: 15px;
+  height: 0.9375rem;
+  width: 0.9375rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -105,11 +107,11 @@ input[type="checkbox"] {
   border-style: solid;
   border-width: 0 0 2px 2px;
   border-color: #0f85ba;
-  width: 10px;
-  height: 5px;
+  width: 0.625rem;
+  height: 0.3125rem;
   position: absolute;
-  top: 3px;
-  left: 4px;
+  top: 0.1875rem;
+  left: 0.25rem;
   transform: scale(2) rotate(-45deg);
   opacity: 0;
   font-size: 0.72rem;
@@ -119,26 +121,4 @@ input[type="checkbox"] {
 .stylecheckbox input[type="checkbox"]:checked + label:after {
   opacity: 1;
   transform: scale(1) rotate(-45deg);
-}
-
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  border: 1.5px solid lightgray;
-  background: #fbfbfb;
-  margin-top: 4px;
-  margin-bottom: 4px;
-
-  height: 30px;
-}
-#lostpass {
-  display: block;
-  text-align: left;
-  margin: auto;
-  max-width: 254.01px; 
-}
-
-.logo {
-  text-align: center;
-  margin-bottom: 10px;
 }
